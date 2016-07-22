@@ -1,6 +1,7 @@
 node_modules
 typings
 **.js
+!gulpfile.js
 **.js.map
 npm-debug.log.*
 dist/**

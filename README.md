@@ -1,4 +1,14 @@
-# Getting started
+# Express Typescript Boilerplate
+
+A minimal boilerplate, with everything you need to make an Express App with Typescript. It uses the following technology
+
+ - Node 4
+ - Express 4
+ - Gulp
+ - Typescript 1.8
+ - PM2
+
+## Getting started
 
 Install dependency
     
@@ -8,14 +18,15 @@ Install the tools and typedefintion with
     
     npm run tools
 
-run the app
+for development run
 
-    npm run
+    gulp watch
 
-stop the app
+which will popolate the dist folder, switch to the dist folder and run
 
-    pm2 stop <myapp | pid>
+    npm start
 
-list the apps
+for stop the app
 
     pm2 list
+    pm2 <stop|delete> <myapp | pid>

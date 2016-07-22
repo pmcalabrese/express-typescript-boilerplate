@@ -1,0 +1,30 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "description": "Boilerplate for express in typescript",
+  "main": "index.js",
+  "scripts": {
+    "tools": "npm install pm2 typings typescript gulp -g && npm run typings && npm run versions",
+    "typings": "typings install",
+    "versions": "printf 'node version: ' && node -v && printf 'typings version: ' && typings -v && printf 'pm2 version: ' && pm2 -v && printf 'typescript version: ' && tsc -v",
+    "start": "pm2 start process.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "boilerplate"
+  ],
+  "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6"
+  }
+}

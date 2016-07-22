@@ -10,6 +10,8 @@ A minimal boilerplate, with everything you need to make an Express App with Type
 
 ## Getting started
 
+You need to have nodeJS v4 installed on your machine, please refer to nodejs.org website.
+
 Install dependency
     
     npm install
@@ -22,11 +24,11 @@ for development run
 
     gulp watch
 
-which will popolate the dist folder, switch to the dist folder and run
+which will popolate the dist folder, for spin the server from the ```dist``` folder run
 
     npm start
 
-for stop the app
+for monitor stop or delete the app, for more commands how to control the server please refer to PM2 docs
 
     pm2 list
     pm2 <stop|delete> <myapp | pid>

@@ -1,11 +1,11 @@
 var gulp = require('gulp');
 var ts = require('gulp-typescript');
-var merge = require('merge2');
  
 var PATHS = {
     COPY: [
         '**/*',
         '!**/*.ts',
+        '!typings',
         'gulp_tasks',
         '!gulpfile.js',
         '!typings.json',
@@ -30,7 +30,7 @@ gulp.task('copy', function() {
     .pipe(gulp.dest(PATHS.DIST));
 });
  
-gulp.task('watch', ['scripts'], function() {
+gulp.task('watch', ['scripts','copy'], function() {
     gulp.watch(PATHS.TS, ['scripts']);
     gulp.watch(PATHS.COPY,['copy']);
 });

@@ -21,7 +21,8 @@
     "body-parser": "^1.15.2",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
-    "method-override": "^2.3.6"
+    "method-override": "^2.3.6",
+    "pug": "^2.0.0-beta4"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

@@ -2,11 +2,6 @@
     "name": "myapp",
     "script": "app.js",
     "watch": "./",
-    "ignore_watch": [
-        "./**.ts",
-        "./node_modules",
-        "./typings"
-    ],
     "watch_options": {
         "followSymlinks": false
     },

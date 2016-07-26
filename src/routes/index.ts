@@ -7,5 +7,5 @@ export function index(req: express.Request, res: express.Response) {
 };
 
 export function hello(req: express.Request, res: express.Response) {
-    res.render('hello'); // hello.html
+    res.render('hello',{ title: "Handlebars", body: "the template engine is handlebars"}); // hello.html
 };

@@ -20,8 +20,8 @@ https://ole.michelsen.dk/blog/social-signin-spa-jwt-server.html
 // Configuration
 
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.set('view options', { layout: false });
+app.set('view engine', 'hbs');
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(methodOverride());

@@ -11,9 +11,9 @@ A minimalistic boilerplate, with everything you need to build services with Expr
 
 ## Getting started
 
-You need to have nodeJS v4 installed on your machine, please refer to nodejs.org website.
+You need to have NodeJS v4 installed on your machine, please refer to [NodeJs.org](https://nodejs.org).
 
-Install the tools and typedefintion with
+Install tools and typescript defintion with
     
     npm run tools
 

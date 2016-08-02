@@ -21,16 +21,16 @@ Install dependency
     
     npm install
 
-for development run
+for development from the src folder ```src``` run
 
     gulp watch
 
-which will popolate the dist folder, and spin a server, for monitor, stop or delete the app
+which will popolate the ```dist``` folder, and spin the server with PM2, for monitor, stop or delete the app
 
     pm2 list
     pm2 <stop|delete> <myapp | pid>
 
-or for stop the server
+or you can use the gulp shortcut for stop the server
 
     gulp serve-stop
 

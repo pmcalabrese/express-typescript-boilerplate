@@ -1,11 +1,13 @@
 # Express Typescript Boilerplate
 
-A minimalistic boilerplate, with everything you need to build services with Express and Typescript. It uses the following technologies:
+A minimalistic boilerplate, with everything you need to start building services with Express and Typescript. It uses the following technologies:
 
  - Node 4
  - Express 4
+ - JWT Authentication with jsonwebtoken lib
  - Gulp
  - Typescript 1.8
+ - Typing for manage Typescrupt type definition
  - PM2
  - Handlebar template
 

@@ -1,13 +1,10 @@
 {
     "compilerOptions": {
+        "target": "ES5",
         "module": "commonjs",
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "../dist"
     },
-    "files": [
-        "./typings/index.d.ts",
-        "./routes/index.ts",
-        "./app.ts"
-    ],
     "exclude": [
         "node_modules"
     ]

@@ -1,6 +1,8 @@
 var config = {
     JWTSECRET : 'secret',
-    PORT: 3000
+    JWTEXPIRE: 1440,
+    PORT: 3000,
+    MONGODB_PATH: 'mongodb://localhost:27017/mydatabase'
 }
 
 export = config;

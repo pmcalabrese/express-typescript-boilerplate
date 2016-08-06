@@ -5,3 +5,4 @@ typings
 **.js.map
 npm-debug.log*
 dist/**
+data

@@ -11,9 +11,8 @@ import * as jwt from 'jsonwebtoken';
 
 import * as config from './config/config';
 import * as routes from "./routes/index";
-import * as routes_auth from "./routes/auth";
 import * as routes_users from "./routes/users";
-import middleware_authenticate = require("./middleware/authenticate");
+import MongoDB from "./db/mongodb";
 
 var app = express();
 
@@ -44,11 +43,17 @@ if (env === 'development') {
 // Routes
 
 app.use('/', routes);
-app.use('/auth', routes_auth); // uprotected route for authentication
-app.use('/api', middleware_authenticate, routes_users); // protected user api
+app.use('/api', routes_users)
 
-app.listen(config.PORT, function(){
-    console.log("Demo Express server listening on port %d in %s mode", config.PORT, app.settings.env);
+MongoDB.connect(config.MONGODB_PATH, (err) => {
+    if (err) {
+        console.log('Unable to connect to Mongo.')
+        process.exit(1)
+    } else {
+        app.listen(config.PORT, function(){
+            console.log("Demo Express server listening on port %d in %s mode", config.PORT, app.settings.env);
+        });
+    }
 });
 
 export var App = app;

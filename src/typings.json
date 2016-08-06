@@ -1,5 +1,6 @@
 {
   "globalDependencies": {
+    "bcrypt": "registry:dt/bcrypt#0.0.0+20160316155526",
     "body-parser": "registry:dt/body-parser#0.0.0+20160619023215",
     "errorhandler": "registry:dt/errorhandler#0.0.0+20160316155526",
     "express": "registry:dt/express#4.0.0+20160708185218",
@@ -10,5 +11,8 @@
     "morgan": "registry:dt/morgan#1.7.0+20160524142355",
     "node": "registry:dt/node#6.0.0+20160720070758",
     "serve-static": "registry:dt/serve-static#0.0.0+20160606155157"
+  },
+  "dependencies": {
+    "mongodb": "registry:npm/mongodb#2.1.0+20160721204323"
   }
 }

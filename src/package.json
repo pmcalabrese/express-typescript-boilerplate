@@ -18,12 +18,14 @@
   "author": "Pachito Marco Calabrese <pm.calabrese@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
     "hbs": "^4.0.0",
     "jsonwebtoken": "^7.1.7",
     "method-override": "^2.3.6",
+    "mongodb": "^2.2.5",
     "morgan": "^1.7.0"
   },
   "devDependencies": {

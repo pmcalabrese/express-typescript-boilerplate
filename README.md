@@ -7,7 +7,7 @@ A minimalistic boilerplate, with everything you need to start building services 
  - JWT Authentication with jsonwebtoken lib
  - Gulp
  - Typescript 1.8
- - Typing for manage Typescrupt type definition
+ - Typing for manage Typescript type definitions
  - PM2
  - Handlebar template
 
